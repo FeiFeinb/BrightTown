@@ -9,7 +9,7 @@ namespace DialogueSystem.Graph
     /// <summary>
     /// 可对话NPC人物信息
     /// </summary>
-    [CreateAssetMenu(fileName = "DialogueNPCInfo", menuName = "Dialogue System/DialogueNPCInfo")]
+    [CreateAssetMenu(fileName = "New DialogueNPCInfo", menuName = "Dialogue System/DialogueNPCInfo")]
     public class DialogueCharacterInfoSO : ScriptableObject
     {
         [DisplayOnly] public int ID;                            // NPC ID

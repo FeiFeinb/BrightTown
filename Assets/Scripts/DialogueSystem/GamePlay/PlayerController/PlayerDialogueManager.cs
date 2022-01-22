@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using DialogueSystem.Graph;
 using DialogueSystem.UI;
 using Module;
-using UI;
+using UICore;
 using UnityEngine;
 
 namespace DialogueSystem.GamePlay
@@ -14,10 +14,10 @@ namespace DialogueSystem.GamePlay
         private DialogueTreeNode _rootNode;
         private GameObject _currentObj;
 
-        public void StartDialogue(DialogueNPC dialogueNpc)
+        public void StartDialogue(DialogueGraphSO dialogueSO, GameObject mountedGameObject)
         {
             // 获取根节点(StartNode)
-            _rootNode = dialogueNpc.dialogueSO.GetDialogueTree();
+            _rootNode = dialogueSO.GetDialogueTree();
             _cacheDic.Clear();
             _rootNode.Traverse(treeNode =>
             {
@@ -28,17 +28,18 @@ namespace DialogueSystem.GamePlay
                 }
             });
             
-            _currentObj = dialogueNpc.gameObject;
+            _currentObj = mountedGameObject;
             
-            // 关闭其他交互按钮的显示
-            BaseUI.GetController<DialogueController>().Show();
+            // 先读取数据
+            CenterEvent.Instance.Raise(GlobalEventID.OnStartDialogue);
+            // 再显示
             HandleTreeNode(_rootNode);
         }
         
         public void EndDialogue()
         {
-            // 开启其他交互按钮的显示
-            BaseUI.GetController<DialogueController>().Hide();
+            // 对话结束事件
+            CenterEvent.Instance.Raise(GlobalEventID.OnEndDialogue);
         }
         
         private void HandleTreeNode(DialogueTreeNode startTreeNode)

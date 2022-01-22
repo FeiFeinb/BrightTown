@@ -6,16 +6,17 @@ namespace Module
 {
     public class GlobalManager : BaseSingletonWithMono<GlobalManager>
     {
-        private void Start()
+        private void Awake()
         {
             DontDestroyOnLoad(this);
             
-            // 注册需要的回调
+            // 加载持久资源（切换场景不销毁）
+            GlobalResourcesLoader.Instance.LoadLastingResource();
+            // 只需要注册一次回调 所有场景的事件都在本次注册完毕 TODO 改为更好的方法
             GlobalEventRegister.Instance.Register();
-            // 寻找Canvas
-            UIResourcesManager.Instance.SeekOrSetMainCanvas();
-            // 加载UI
-            GlobalResourcesLoader.Instance.LoadSceneResource();
+            
+            // 进入场景
+            CenterEvent.Instance.Raise(GlobalEventID.EnterScene);
         }
     }
 }

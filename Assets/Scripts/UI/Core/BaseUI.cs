@@ -1,8 +1,11 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using DG.Tweening;
 using Module;
 using UnityEngine;
-namespace UI
+namespace UICore
 {
     public abstract class BaseUI : MonoBehaviour, IUserInterfacePreInit
     {
@@ -36,6 +39,7 @@ namespace UI
         {
             return UIResourcesManager.Instance.GetUserInterface<T>();
         }
+
         
         /// <summary>
         /// 获取UI当前是否存在或是否显示
@@ -60,8 +64,19 @@ namespace UI
             _controlUIGameObj.SetActive(false);
         }
         
+        /// <summary>
+        /// 如果子类中具有BaseUIPanel 那么需要重写这个方法以调用BaseUIPanel的Init
+        /// </summary>
+        /// <returns>BaseUIPanel</returns>
+        protected virtual IEnumerable<BaseUIPanel> GetView()
+        {
+            yield return null;
+        }
+        
         public virtual void Show()
         {
+            if (isActive)
+                return;
             SetUIActive();
             if (hasDoTween)
             {
@@ -74,6 +89,8 @@ namespace UI
 
         public virtual void Hide()
         {
+            if (!isActive)
+                return;
             if (hasDoTween)
             {
                 if (!isFinish) return;
@@ -105,7 +122,21 @@ namespace UI
                 SetUIUnActive();
             };
             hasDoTween = AchieveDoTweenSequence();
-            InitControlObj();
+            
+            bool isDefaultShow = InitControlObj();
+            _controlUIGameObj.SetActive(isDefaultShow);
+            
+            var views = GetView();
+            if (views != null)
+            {
+                foreach (var baseUIPanel in views)
+                {
+                    if (baseUIPanel != null)
+                    {
+                        baseUIPanel.Init();
+                    }
+                }
+            }
         }
         
         /// <summary>
@@ -118,12 +149,14 @@ namespace UI
         }
 
         /// <summary>
-        /// 重写时不需要调用基类的方法 初始化控制UI时的Trans和GameObj
+        /// 初始化UI所控制的Trans和GameObj
         /// </summary>
-        protected virtual void InitControlObj()
+        /// <returns>所控制的GameObj默认SetActive的值</returns>
+        protected virtual bool InitControlObj()
         {
             _controlUITrans = transform;
             _controlUIGameObj = gameObject;
+            return false;
         }
 
         /// <summary>

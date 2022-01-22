@@ -1,11 +1,11 @@
 using DG.Tweening;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
-using UI;
+using UICore;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UI
+namespace UICore
 {
     public class SceneLoadingController : BaseUI
     {

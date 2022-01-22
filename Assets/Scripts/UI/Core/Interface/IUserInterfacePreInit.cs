@@ -1,4 +1,4 @@
-namespace UI
+namespace UICore
 {
     public interface IUserInterfacePreInit
     {

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7d154d8499b408baaefd051beae8ada, type: 3}
   m_Name: New DialogueGraphSO
   m_EditorClassIdentifier: 
-  UniqueID: a77d7e3f-b604-45ff-8685-867971096ae2
+  UniqueID: 2bbdf183-fe54-44bf-84cc-f8b28dc0a5d9
   edgesSaveData: []
   startNodesSaveData: []
   endNodesSaveData: []

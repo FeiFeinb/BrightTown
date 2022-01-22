@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using DialogueSystem.UI;
-using UI;
+using UICore;
 using UnityEngine;
 
 namespace DialogueSystem.Graph

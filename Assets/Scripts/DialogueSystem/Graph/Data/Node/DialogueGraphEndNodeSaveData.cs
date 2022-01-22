@@ -10,9 +10,8 @@ namespace DialogueSystem.Graph
     [System.Serializable]
     public class DialogueGraphEndNodeSaveData : DialogueGraphBaseNodeSaveData
     {
-        public EndDialogueNodeType EndType;     // 结束节点类型
-
-        public DialogueGraphEndNodeSaveData(string uniqueID, Rect rectPos, List<DialogueGraphPortSaveData> inputPortsData, List<DialogueGraphPortSaveData> outputPortsData) : base(uniqueID, rectPos, inputPortsData, outputPortsData)
+        public DialogueGraphEndNodeSaveData(string uniqueID, Rect rectPos, List<DialogueGraphPortSaveData> inputPortsData,
+            List<DialogueGraphPortSaveData> outputPortsData) : base(uniqueID, rectPos, inputPortsData, outputPortsData)
         {
         }
 

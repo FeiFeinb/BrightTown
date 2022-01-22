@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using DialogueSystem.GamePlay;
-using Interact;
 using Module;
-using UI;
+using UICore;
 using UnityEngine;
 
 namespace DialogueSystem.Graph
@@ -19,8 +18,6 @@ namespace DialogueSystem.Graph
 
         public override bool HandleData(DialogueTreeNode treeNode, GameObject obj)
         {
-            // BaseUI.GetController<InteractionController>().AddButton(InteractType.DestroyAll, Content, 
-            //     () => PlayerDialogueManager.Instance.ContinueDialogue(UniqueID));
             BaseUI.GetController<InteractionController>().AddButton(InteractType.DestroyAll, Content, 
                 () => CenterEvent.Instance.Raise(GlobalEventID.ContinueDialogue, UniqueID));
             return false;

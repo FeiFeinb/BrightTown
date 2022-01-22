@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Config;
 using UnityEngine;
-using UI;
+using UICore;
 
 namespace Module
 {
@@ -11,6 +11,8 @@ namespace Module
     {
         public Transform mainCanvasTrans;
 
+        public Transform lastingCanvasTrans;
+        
         private Dictionary<string, BaseUI> _cachedDic = new Dictionary<string, BaseUI>();
 
         public void SeekOrSetMainCanvas(Transform canvasTrans = null)
