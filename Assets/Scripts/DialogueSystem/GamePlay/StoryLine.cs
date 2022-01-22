@@ -14,7 +14,7 @@ namespace DialogueSystem.GamePlay
         
         public void ContinueStoryLine()
         {
-            PlayerDialogueManager.Instance.StartDialogue(storyList[currentIndex++], gameObject);
+            PlayerDialogueManager.Instance.StartDialogue(storyList[currentIndex], gameObject);
         }
 
         public void AdvancementStoryLine()
@@ -28,9 +28,14 @@ namespace DialogueSystem.GamePlay
             currentIndex = 0;
         }
 
-        private void Start()
+        private bool isLock = false;
+        public void Update()
         {
-            ContinueStoryLine();
+            if (Input.GetKeyDown(KeyCode.Space) && !isLock)
+            {
+                ContinueStoryLine();
+                isLock = true;
+            }
         }
     }
 }
