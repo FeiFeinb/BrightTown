@@ -216,6 +216,7 @@ namespace DialogueSystem.Editor
                 });
             }
             
+            EditorUtility.SetDirty(_selectSO);
             AssetDatabase.SaveAssets();
         }
 

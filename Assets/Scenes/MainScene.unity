@@ -1116,7 +1116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   storyList:
-  - {fileID: 11400000, guid: 08f8206297fdf894a83fbc1f1616f61b, type: 2}
+  - {fileID: 11400000, guid: 9f89b32cc68a4564b95601943c7c1aeb, type: 2}
 --- !u!1 &1556569152
 GameObject:
   m_ObjectHideFlags: 0
