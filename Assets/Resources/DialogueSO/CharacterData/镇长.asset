@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 937b19cb2241a774a8b34aeeee76727e, type: 3}
-  m_Name: Leader
+  m_Name: "\u9547\u957F"
   m_EditorClassIdentifier: 
   ID: 0
-  _characterName: Jelly
+  _characterName: "\u9547\u957F"
   _headSculpture: {fileID: 21300000, guid: ae98c2bcceeef254dba10136f44326cb, type: 3}

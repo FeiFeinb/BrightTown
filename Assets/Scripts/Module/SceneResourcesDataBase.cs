@@ -1,5 +1,6 @@
 ﻿using System;
 using Config;
+using RPG.Module;
 using UnityEngine;
 
 namespace Module
@@ -9,11 +10,11 @@ namespace Module
         public SceneResourceInfoSO sceneResourceInfoSO;
 
         // TODO: 作为切换场景的标识
-        public AudioManager.BGMType bgmType;
+        public SceneType sceneType;
         
         private void Start()
         {
-            AudioManager.Instance.SwitchBGMSound(bgmType);
+            AudioManager.Instance.SwitchBGMSound(sceneType);
         }
     }
 }

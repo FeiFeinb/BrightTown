@@ -2,15 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Module;
+using RPG.Module;
 using UnityEngine;
 
 public class AudioManager : BaseSingletonWithMono<AudioManager>
 {
-    public enum BGMType
-    {
-        Start, Main, End
-    }
-    
     [SerializeField] private AudioSource _buttonAudio;
     [SerializeField] private AudioSource _buildingAudio;
     [SerializeField] private AudioSource _QuestionnaireAudio;
@@ -52,18 +48,18 @@ public class AudioManager : BaseSingletonWithMono<AudioManager>
         _weatherAudio.Play();
     }
 
-    public void SwitchBGMSound(BGMType bgmType)
+    public void SwitchBGMSound(SceneType sceneType)
     {
         _musicAudio.Stop();
-        switch (bgmType)
+        switch (sceneType)
         {
-            case BGMType.Start:
+            case SceneType.Start:
                 _musicAudio.clip = _startSceneAudioClip;
                 break;
-            case BGMType.Main:
+            case SceneType.Main:
                 _musicAudio.clip = _mainSceneAudioClip;
                 break;
-            case BGMType.End:
+            case SceneType.End:
                 _musicAudio.clip = _endSceneAudioClip;
                 break;
         }

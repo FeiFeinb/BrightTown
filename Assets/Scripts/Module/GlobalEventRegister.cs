@@ -1,6 +1,7 @@
 ﻿using System;
 using DialogueSystem.GamePlay;
 using DialogueSystem.UI;
+using RPG.Module;
 using UICore;
 using UnityEditor;
 using UnityEngine;
@@ -12,8 +13,14 @@ namespace Module
     public enum GlobalEventID
     {
         ExitGame,
-        
+
         OpenOptionView,
+        OpenQuestionnaireView,
+        OpenEndingView,
+
+        CloseOptionView,
+        CloseQuestionnaireView,
+        CloseEndingView,
 
         OnStartDialogue,
         OnEndDialogue,
@@ -47,6 +54,23 @@ namespace Module
 
             CenterEvent.Instance.AddListener(GlobalEventID.OpenOptionView,
                 delegate { BaseUI.GetController<OptionController>().Show(); });
+            CenterEvent.Instance.AddListener(GlobalEventID.OpenQuestionnaireView,
+                delegate { BaseUI.GetController<QuestionnaireController>().Show(); });
+            CenterEvent.Instance.AddListener(GlobalEventID.OpenEndingView,
+                delegate
+                {
+                    AudioManager.Instance.SwitchBGMSound(SceneType.End);
+                    BaseUI.GetController<EndingController>().Show();
+                });
+
+            CenterEvent.Instance.AddListener(GlobalEventID.CloseOptionView,
+                delegate { BaseUI.GetController<OptionController>().Hide(); });
+            CenterEvent.Instance.AddListener(GlobalEventID.CloseQuestionnaireView,
+                delegate { BaseUI.GetController<QuestionnaireController>().Hide(); });
+            CenterEvent.Instance.AddListener(GlobalEventID.CloseEndingView,
+                delegate { SceneLoader.Instance.Load("StartScene"); });
+
+
             CenterEvent.Instance.AddListener(GlobalEventID.ExitGame, QuitGame);
 
             CenterEvent.Instance.AddListener(GlobalEventID.ButtonClick,
@@ -58,6 +82,7 @@ namespace Module
                 UIResourcesManager.Instance.SeekOrSetMainCanvas();
                 // 加载UI 每次进入场景都需要进行
                 GlobalResourcesLoader.Instance.LoadSceneResource();
+                // 广播可以开始游戏
             });
 
             CenterEvent.Instance.AddListener(GlobalEventID.ExitScene, delegate

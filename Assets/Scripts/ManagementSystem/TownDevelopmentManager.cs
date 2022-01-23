@@ -2,6 +2,7 @@
 using DialogueSystem.Graph;
 using ManagementSystem;
 using Module;
+using UICore;
 
 public class TownDevelopmentManager : BaseSingletonWithMono<TownDevelopmentManager>
 {
@@ -13,11 +14,7 @@ public class TownDevelopmentManager : BaseSingletonWithMono<TownDevelopmentManag
     
     public List<ChoiceImpactSO> playerChoiceCached = new List<ChoiceImpactSO>();
 
-    // 是否是黑夜
-    public bool isSunny = true;
-
-    // 是否白天
-    public bool isDay = true;
+    public int currentTime = 1;
     
     public void OnPlayerMakeChoice(ChoiceImpactSO choice)
     {
@@ -28,6 +25,11 @@ public class TownDevelopmentManager : BaseSingletonWithMono<TownDevelopmentManag
         playerChoiceCached.Add(choice);
     }
 
+    public void SendQuestionnaire()
+    {
+        BaseUI.GetController<QuestionnaireController>().CreateQuestionnaireDetail(brightSideScore, currentTime);
+    }
+    
     void End()
     {
         

@@ -19,7 +19,7 @@ public class OptionView : BaseUIPanel
     {
         base.Init();
         // 退出UI
-        returnButton.onClick.AddListener(delegate { BaseUI.GetController<OptionController>().Hide(); });
+        returnButton.onClick.AddListener(delegate { CenterEvent.Instance.Raise(GlobalEventID.CloseOptionView); });
         quitGameButton.onClick.AddListener(delegate { CenterEvent.Instance.Raise(GlobalEventID.ExitGame); });
     }
 }

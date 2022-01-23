@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MainSceneResources
   m_EditorClassIdentifier: 
   configPairs:
-  - loadPrefab: {fileID: 8108204757130468898, guid: 6a8337279801c8e4b84e067244af16a2, type: 3}
+  - loadPrefab: {fileID: 8558812217199604649, guid: 6daa06a970a7e7f408ee1c9f29e725b1, type: 3}
     className: MainGameController
   - loadPrefab: {fileID: 7743090815736446392, guid: 74a38cdcceb6cec45b7c6a0d35dad612, type: 3}
     className: DialogueController
@@ -21,3 +21,7 @@ MonoBehaviour:
     className: InteractionController
   - loadPrefab: {fileID: 8192474591619870035, guid: 4af9520e1603b834582ea99e1f90be43, type: 3}
     className: OptionController
+  - loadPrefab: {fileID: 3538539426836205935, guid: 2cdc17cc191b66f41bfd438d7031672b, type: 3}
+    className: QuestionnaireController
+  - loadPrefab: {fileID: 7044590013643821641, guid: cccb64891fec7d7489d24ba98fc10c3f, type: 3}
+    className: EndingController

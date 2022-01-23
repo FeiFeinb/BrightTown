@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BackGround
+    uniqueID: 4108136247
+    locked: 0
+  - name: Road
+    uniqueID: 2973744973
+    locked: 0
+  - name: Building
+    uniqueID: 380897823
+    locked: 0

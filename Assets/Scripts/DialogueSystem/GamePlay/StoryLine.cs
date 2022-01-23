@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using DialogueSystem.Graph;
 using UnityEngine;
@@ -11,10 +12,15 @@ namespace DialogueSystem.GamePlay
         public List<DialogueGraphSO> storyList;               // 对话内容SO
 
         private int currentIndex = 0;
+
+        private void Start()
+        {
+            Invoke(nameof(ContinueStoryLine), 1.0f);
+        }
         
         public void ContinueStoryLine()
         {
-            PlayerDialogueManager.Instance.StartDialogue(storyList[currentIndex], gameObject);
+            PlayerDialogueManager.Instance.StartDialogue(storyList[currentIndex++], gameObject);
         }
 
         public void AdvancementStoryLine()
@@ -28,14 +34,5 @@ namespace DialogueSystem.GamePlay
             currentIndex = 0;
         }
 
-        private bool isLock = false;
-        public void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Space) && !isLock)
-            {
-                ContinueStoryLine();
-                isLock = true;
-            }
-        }
     }
 }

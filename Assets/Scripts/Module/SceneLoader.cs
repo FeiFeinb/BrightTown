@@ -8,6 +8,10 @@ using UnityEngine.UI;
 
 namespace RPG.Module
 {
+    public enum SceneType
+    {
+        Start, Main, End
+    }
     public class SceneLoader : BaseSingletonWithMono<SceneLoader>
     {
         private bool _isLoading = false;

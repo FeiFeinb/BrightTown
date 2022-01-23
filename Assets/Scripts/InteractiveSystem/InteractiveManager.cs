@@ -25,10 +25,9 @@ public class InteractiveManager : BaseSingletonWithMono<InteractiveManager>
     
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && canDialogueContinue && dialogueUniqueID != String.Empty)
+        if (Input.GetKeyDown(KeyCode.Space) && canDialogueContinue && dialogueUniqueID != String.Empty)
         {
             CenterEvent.Instance.Raise(GlobalEventID.ContinueDialogue, dialogueUniqueID);
-
         }
     }
 }

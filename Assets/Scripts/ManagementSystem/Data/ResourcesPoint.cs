@@ -6,9 +6,9 @@ using UnityEngine;
 [Serializable]
 public class ResourcesPoint
 {
-    [SerializeField, DisplayOnly] public int money;
-    [SerializeField, DisplayOnly] public int technology;
-    [SerializeField, DisplayOnly] public int manPower;
+    public int money;
+    public int technology;
+    public int manPower;
 
     public static ResourcesPoint operator +(ResourcesPoint left, ResourcesPoint right)
     {

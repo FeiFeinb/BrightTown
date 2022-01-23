@@ -22,6 +22,7 @@ namespace DialogueSystem.UI
 
             _dialogueView.SetSpeakerName(characterInfoSO.CharacterName);
             _dialogueView.SetSpeakerHead(characterInfoSO.HeadSculpture);
+            // 根据TalkNode中的数据进行滚动
             _currentDialogueCoroutine = StartCoroutine(ConversationScrolling(content, nodeUniqueID));
         }
 
@@ -31,13 +32,14 @@ namespace DialogueSystem.UI
             WaitForSeconds waitTime = new WaitForSeconds(singleCharScrollTime);
             _dialogueView.ClearContent();
             _dialogueView.SetContinueIconActive(false);
-
-            // 等待UI动画结束才开始字幕滚动
+            
+            // 等待UI动画结束才开始字幕滚动 等待角色出现完再进行
             while (!isFinish)
             {
                 yield return null;
             }
-            
+
+            // 等待角色入场再进行对话
             foreach (char singleChar in dialogueText)
             {
                 _dialogueView.AddContent(singleChar);
@@ -54,9 +56,9 @@ namespace DialogueSystem.UI
         protected override bool AchieveDoTweenSequence()
         {
             _inSequence.Append(_dialogueView.canvasGroup.DOFade(1, 0.2f));
-            _inSequence.Insert(0,
-                _dialogueView.speakerHead.rectTransform.DOAnchorPosX(-_dialogueView.speakerHead.rectTransform.rect.x,
-                    0.3f));
+            _inSequence.Append(_dialogueView.speakerHead.rectTransform.DOAnchorPosX(
+                -_dialogueView.speakerHead.rectTransform.rect.x,
+                0.3f));
             return true;
         }
 
