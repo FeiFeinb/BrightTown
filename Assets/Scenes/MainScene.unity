@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneResourceInfoSO: {fileID: 11400000, guid: 23fd778f86bb96542975442609fa1c0b, type: 2}
-  sceneType: 0
+  sceneType: 1
 --- !u!4 &484074340
 Transform:
   m_ObjectHideFlags: 0
@@ -387,21 +387,12 @@ MonoBehaviour:
   brightSideScore:
     peopleSatisfaction: 0
     economy: 0
-    transportation: 0
-    educate: 0
-    cityFacilities: 0
-    housing: 0
-    medical: 0
   darkSideScore:
     peopleSatisfaction: 0
     economy: 0
-    transportation: 0
-    educate: 0
-    cityFacilities: 0
-    housing: 0
-    medical: 0
   playerChoiceCached: []
   currentTime: 1
+  isCorrupt: 0
 --- !u!114 &599301145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -534,7 +525,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &968256878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,8 +806,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   storyList:
-  - {fileID: 11400000, guid: 9f89b32cc68a4564b95601943c7c1aeb, type: 2}
   - {fileID: 11400000, guid: c1688692d222e74418a9665a71d280f4, type: 2}
+  - {fileID: 11400000, guid: d1b2e7def2ff03e4d8aadce67ea834e3, type: 2}
+  - {fileID: 11400000, guid: 44a3cf8a671f1ea4986f7d332362f92f, type: 2}
+  - {fileID: 11400000, guid: a30755dbbe3f5774e876292c654d56ee, type: 2}
+  - {fileID: 11400000, guid: 6dbc5030aa2a9ba4fb8e142c5a12e340, type: 2}
 --- !u!1 &1557885835
 GameObject:
   m_ObjectHideFlags: 0

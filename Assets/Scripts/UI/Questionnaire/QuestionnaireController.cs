@@ -26,6 +26,7 @@ public class QuestionnaireController : BaseUI
         GameObject newDetail = UIResourcesManager.Instance.InstantiateUserInterface(_questionnaireView.detailPrefab,
             _questionnaireView.detailContainer);
         var detailView = newDetail.GetComponent<QuestionnaireDetailsView>();
+        detailView.Init();
         if (detailView != null)
         {
             detailView.RecordData(scorePoint, index);

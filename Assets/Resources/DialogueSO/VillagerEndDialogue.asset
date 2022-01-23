@@ -1,0 +1,296 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d154d8499b408baaefd051beae8ada, type: 3}
+  m_Name: VillagerEndDialogue
+  m_EditorClassIdentifier: 
+  UniqueID: d0618c3a-5c2a-4c78-86b4-582f2fde2729
+  edgesSaveData:
+  - OutputNodeUniqueID: a1838aee-d0c6-4fe8-b897-37301781646d
+    InputNodeUniqueID: 88a7f609-af3f-4af0-8619-38348b45d8ff
+  - OutputNodeUniqueID: cf278023-1709-4dac-b05a-4e3785be0d90
+    InputNodeUniqueID: bdce2228-1481-4389-9c9b-def05d88b7bb
+  - OutputNodeUniqueID: e0db3704-6d96-45c5-bbe3-b9325018629b
+    InputNodeUniqueID: dcf35ca8-0f6c-4f37-bdb1-9f4793ff571f
+  - OutputNodeUniqueID: bdce2228-1481-4389-9c9b-def05d88b7bb
+    InputNodeUniqueID: 93de3cc1-b66c-480e-aed6-4836fd28f634
+  - OutputNodeUniqueID: dcf35ca8-0f6c-4f37-bdb1-9f4793ff571f
+    InputNodeUniqueID: 35b76350-7d23-4f21-a807-10acb5cfa091
+  - OutputNodeUniqueID: 93de3cc1-b66c-480e-aed6-4836fd28f634
+    InputNodeUniqueID: a26b5668-86a2-42ed-992a-e95313061484
+  - OutputNodeUniqueID: a26b5668-86a2-42ed-992a-e95313061484
+    InputNodeUniqueID: a88b7b1f-3da8-4be1-b9fd-40e731527acc
+  - OutputNodeUniqueID: 88a7f609-af3f-4af0-8619-38348b45d8ff
+    InputNodeUniqueID: cf278023-1709-4dac-b05a-4e3785be0d90
+  - OutputNodeUniqueID: 88a7f609-af3f-4af0-8619-38348b45d8ff
+    InputNodeUniqueID: e0db3704-6d96-45c5-bbe3-b9325018629b
+  - OutputNodeUniqueID: 35b76350-7d23-4f21-a807-10acb5cfa091
+    InputNodeUniqueID: dbd3522b-28de-4619-ba86-44e5e022df16
+  - OutputNodeUniqueID: a88b7b1f-3da8-4be1-b9fd-40e731527acc
+    InputNodeUniqueID: 7a5092eb-03fd-4074-b65f-915edf195084
+  startNodesSaveData:
+  - _uniqueID: a1838aee-d0c6-4fe8-b897-37301781646d
+    _rectPos:
+      serializedVersion: 2
+      x: 2497.3333
+      y: -462
+      width: 108.66675
+      height: 77.33334
+    _inputPortsData: []
+    _outputPortsData:
+    - PortName: Children
+      Capacity: 0
+      EdgesSaveData:
+      - OutputNodeUniqueID: a1838aee-d0c6-4fe8-b897-37301781646d
+        InputNodeUniqueID: 88a7f609-af3f-4af0-8619-38348b45d8ff
+  endNodesSaveData:
+  - _uniqueID: dbd3522b-28de-4619-ba86-44e5e022df16
+    _rectPos:
+      serializedVersion: 2
+      x: 4608
+      y: -624
+      width: 103.333496
+      height: 77.33334
+    _inputPortsData:
+    - PortName: Parents
+      Capacity: 1
+      EdgesSaveData:
+      - OutputNodeUniqueID: 35b76350-7d23-4f21-a807-10acb5cfa091
+        InputNodeUniqueID: dbd3522b-28de-4619-ba86-44e5e022df16
+    _outputPortsData: []
+  - _uniqueID: 7a5092eb-03fd-4074-b65f-915edf195084
+    _rectPos:
+      serializedVersion: 2
+      x: 5268
+      y: -369.33334
+      width: 103.333496
+      height: 77.33334
+    _inputPortsData:
+    - PortName: Parents
+      Capacity: 1
+      EdgesSaveData:
+      - OutputNodeUniqueID: a88b7b1f-3da8-4be1-b9fd-40e731527acc
+        InputNodeUniqueID: 7a5092eb-03fd-4074-b65f-915edf195084
+    _outputPortsData: []
+  talkNodesSaveData:
+  - _uniqueID: cf278023-1709-4dac-b05a-4e3785be0d90
+    _rectPos:
+      serializedVersion: 2
+      x: 3054
+      y: -360.66666
+      width: 410.66675
+      height: 185.99998
+    _inputPortsData:
+    - PortName: Parents
+      Capacity: 1
+      EdgesSaveData:
+      - OutputNodeUniqueID: 88a7f609-af3f-4af0-8619-38348b45d8ff
+        InputNodeUniqueID: cf278023-1709-4dac-b05a-4e3785be0d90
+    _outputPortsData:
+    - PortName: Child
+      Capacity: 0
+      EdgesSaveData:
+      - OutputNodeUniqueID: cf278023-1709-4dac-b05a-4e3785be0d90
+        InputNodeUniqueID: bdce2228-1481-4389-9c9b-def05d88b7bb
+    Content: "\u5462\u4E2A\u7CFB\u6211\u5411\u4E0A\u7EA7\u7533\u8BF7\u5605\u8D44\u91D1\uFF0C\u6211\u7EFC\u5408\u8003\u8651\u5497\u4F60\u7530\u91CC\u5605\u60C5\u51B5\uFF0C\u53BB\u91C7\u8D2D\u5605\u5668\u6750"
+    TalkAudioClip: {fileID: 0}
+    Interlocutor: 0
+    CharacterInfoSO: {fileID: 11400000, guid: 67b649f956cbea147b0d9cd4e5ea7ae3, type: 2}
+  - _uniqueID: e0db3704-6d96-45c5-bbe3-b9325018629b
+    _rectPos:
+      serializedVersion: 2
+      x: 3070.6667
+      y: -624.6667
+      width: 446.6665
+      height: 186.00003
+    _inputPortsData:
+    - PortName: Parents
+      Capacity: 1
+      EdgesSaveData:
+      - OutputNodeUniqueID: 88a7f609-af3f-4af0-8619-38348b45d8ff
+        InputNodeUniqueID: e0db3704-6d96-45c5-bbe3-b9325018629b
+    _outputPortsData:
+    - PortName: Child
+      Capacity: 0
+      EdgesSaveData:
+      - OutputNodeUniqueID: e0db3704-6d96-45c5-bbe3-b9325018629b
+        InputNodeUniqueID: dcf35ca8-0f6c-4f37-bdb1-9f4793ff571f
+    Content: "\u9547\u957F\uFF0C\u6211\u55F0\u5757\u5730\u51FA\u5497\u54A9\u95EE\u9898\u554A\uFF0C\u5C71\u836F\u82D7\u90FD\u5DE2\u5587\uFF0C\u4F60\u5FEB\u5572\u53BB\u7747\u4E0B\uFF0C\u5FEB\u5572\u53BB\u7747\u4E0B\u5566\uFF01"
+    TalkAudioClip: {fileID: 0}
+    Interlocutor: 0
+    CharacterInfoSO: {fileID: 11400000, guid: 67b649f956cbea147b0d9cd4e5ea7ae3, type: 2}
+  - _uniqueID: dcf35ca8-0f6c-4f37-bdb1-9f4793ff571f
+    _rectPos:
+      serializedVersion: 2
+      x: 3556.6667
+      y: -624
+      width: 470.6665
+      height: 186
+    _inputPortsData:
+    - PortName: Parents
+      Capacity: 1
+      EdgesSaveData:
+      - OutputNodeUniqueID: e0db3704-6d96-45c5-bbe3-b9325018629b
+        InputNodeUniqueID: dcf35ca8-0f6c-4f37-bdb1-9f4793ff571f
+    _outputPortsData:
+    - PortName: Child
+      Capacity: 0
+      EdgesSaveData:
+      - OutputNodeUniqueID: dcf35ca8-0f6c-4f37-bdb1-9f4793ff571f
+        InputNodeUniqueID: 35b76350-7d23-4f21-a807-10acb5cfa091
+    Content: "\u6211\u55F0\u5757\u5730\u5E9F\u5497\u5566\uFF0C\u5C71\u836F\u79CD\u5514\u51FA\u569F\uFF0C\u5176\u4ED6\u4F5C\u7269\u90FD\u79CD\u5514\u51FA\u569F\u4E2B\uFF0C\u6211\u5FEB\u7530\u4E2B\uFF0C\u5462\u843D\u6652\u51A7\u5497\u4E2B"
+    TalkAudioClip: {fileID: 0}
+    Interlocutor: 0
+    CharacterInfoSO: {fileID: 11400000, guid: 67b649f956cbea147b0d9cd4e5ea7ae3, type: 2}
+  - _uniqueID: bdce2228-1481-4389-9c9b-def05d88b7bb
+    _rectPos:
+      serializedVersion: 2
+      x: 3517.3333
+      y: -361.33334
+      width: 368
+      height: 186.00002
+    _inputPortsData:
+    - PortName: Parents
+      Capacity: 1
+      EdgesSaveData:
+      - OutputNodeUniqueID: cf278023-1709-4dac-b05a-4e3785be0d90
+        InputNodeUniqueID: bdce2228-1481-4389-9c9b-def05d88b7bb
+    _outputPortsData:
+    - PortName: Child
+      Capacity: 0
+      EdgesSaveData:
+      - OutputNodeUniqueID: bdce2228-1481-4389-9c9b-def05d88b7bb
+        InputNodeUniqueID: 93de3cc1-b66c-480e-aed6-4836fd28f634
+    Content: "\u6211\u5462\u5757\u7530\u6B63\u8981\u8FDB\u884C\u7B2C\u4E8C\u9020\u5605\u5C71\u836F\u79CD\u690D\uFF0C\u4F60\u6709\u54A9\u6307\u793A\uFF1F"
+    TalkAudioClip: {fileID: 0}
+    Interlocutor: 0
+    CharacterInfoSO: {fileID: 11400000, guid: 67b649f956cbea147b0d9cd4e5ea7ae3, type: 2}
+  - _uniqueID: 93de3cc1-b66c-480e-aed6-4836fd28f634
+    _rectPos:
+      serializedVersion: 2
+      x: 3932.6667
+      y: -361.33334
+      width: 367.99976
+      height: 186.00002
+    _inputPortsData:
+    - PortName: Parents
+      Capacity: 1
+      EdgesSaveData:
+      - OutputNodeUniqueID: bdce2228-1481-4389-9c9b-def05d88b7bb
+        InputNodeUniqueID: 93de3cc1-b66c-480e-aed6-4836fd28f634
+    _outputPortsData:
+    - PortName: Child
+      Capacity: 0
+      EdgesSaveData:
+      - OutputNodeUniqueID: 93de3cc1-b66c-480e-aed6-4836fd28f634
+        InputNodeUniqueID: a26b5668-86a2-42ed-992a-e95313061484
+    Content: "\u591A\u5F97\u5497\u4F60\u5605\u6307\u5BFC\uFF0C\u6211\u54CB\u5462\u5757\u5730\u6536\u6210\u6BD4\u5F80\u5E74\u90FD\u9AD8\u4E2B"
+    TalkAudioClip: {fileID: 0}
+    Interlocutor: 0
+    CharacterInfoSO: {fileID: 11400000, guid: 67b649f956cbea147b0d9cd4e5ea7ae3, type: 2}
+  - _uniqueID: a26b5668-86a2-42ed-992a-e95313061484
+    _rectPos:
+      serializedVersion: 2
+      x: 4339.3335
+      y: -352
+      width: 368
+      height: 186
+    _inputPortsData:
+    - PortName: Parents
+      Capacity: 1
+      EdgesSaveData:
+      - OutputNodeUniqueID: 93de3cc1-b66c-480e-aed6-4836fd28f634
+        InputNodeUniqueID: a26b5668-86a2-42ed-992a-e95313061484
+    _outputPortsData:
+    - PortName: Child
+      Capacity: 0
+      EdgesSaveData:
+      - OutputNodeUniqueID: a26b5668-86a2-42ed-992a-e95313061484
+        InputNodeUniqueID: a88b7b1f-3da8-4be1-b9fd-40e731527acc
+    Content: "\u5462\u51E0\u888B\u5C71\u836F\u540C\u7C9F\u7C73\uFF0C\u4F60\u4E00\u5B9A\u8981\u6536\u4E0B"
+    TalkAudioClip: {fileID: 0}
+    Interlocutor: 0
+    CharacterInfoSO: {fileID: 11400000, guid: 67b649f956cbea147b0d9cd4e5ea7ae3, type: 2}
+  conditionNodesSaveData:
+  - _uniqueID: 88a7f609-af3f-4af0-8619-38348b45d8ff
+    _rectPos:
+      serializedVersion: 2
+      x: 2655.3333
+      y: -462
+      width: 353.3335
+      height: 146
+    _inputPortsData:
+    - PortName: Source
+      Capacity: 0
+      EdgesSaveData:
+      - OutputNodeUniqueID: a1838aee-d0c6-4fe8-b897-37301781646d
+        InputNodeUniqueID: 88a7f609-af3f-4af0-8619-38348b45d8ff
+    _outputPortsData:
+    - PortName: True
+      Capacity: 0
+      EdgesSaveData:
+      - OutputNodeUniqueID: 88a7f609-af3f-4af0-8619-38348b45d8ff
+        InputNodeUniqueID: e0db3704-6d96-45c5-bbe3-b9325018629b
+    - PortName: False
+      Capacity: 0
+      EdgesSaveData:
+      - OutputNodeUniqueID: 88a7f609-af3f-4af0-8619-38348b45d8ff
+        InputNodeUniqueID: cf278023-1709-4dac-b05a-4e3785be0d90
+    dialogueConditionType: 0
+    SourceSO: {fileID: 11400000, guid: ac1a2f2771db0de42a90b54434090570, type: 2}
+  eventNodesSaveData:
+  - _uniqueID: 35b76350-7d23-4f21-a807-10acb5cfa091
+    _rectPos:
+      serializedVersion: 2
+      x: 4121.3335
+      y: -624
+      width: 399.333
+      height: 158
+    _inputPortsData:
+    - PortName: Parents
+      Capacity: 0
+      EdgesSaveData:
+      - OutputNodeUniqueID: dcf35ca8-0f6c-4f37-bdb1-9f4793ff571f
+        InputNodeUniqueID: 35b76350-7d23-4f21-a807-10acb5cfa091
+    _outputPortsData:
+    - PortName: Children
+      Capacity: 0
+      EdgesSaveData:
+      - OutputNodeUniqueID: 35b76350-7d23-4f21-a807-10acb5cfa091
+        InputNodeUniqueID: dbd3522b-28de-4619-ba86-44e5e022df16
+    EventFieldsData:
+    - EventType: 0
+      SO: {fileID: 11400000, guid: 09d0b3bdece424b4faa280b7a3699d19, type: 2}
+  - _uniqueID: a88b7b1f-3da8-4be1-b9fd-40e731527acc
+    _rectPos:
+      serializedVersion: 2
+      x: 4794.6665
+      y: -353.33334
+      width: 399.3335
+      height: 214
+    _inputPortsData:
+    - PortName: Parents
+      Capacity: 0
+      EdgesSaveData:
+      - OutputNodeUniqueID: a26b5668-86a2-42ed-992a-e95313061484
+        InputNodeUniqueID: a88b7b1f-3da8-4be1-b9fd-40e731527acc
+    _outputPortsData:
+    - PortName: Children
+      Capacity: 0
+      EdgesSaveData:
+      - OutputNodeUniqueID: a88b7b1f-3da8-4be1-b9fd-40e731527acc
+        InputNodeUniqueID: 7a5092eb-03fd-4074-b65f-915edf195084
+    EventFieldsData:
+    - EventType: 0
+      SO: {fileID: 11400000, guid: 09d0b3bdece424b4faa280b7a3699d19, type: 2}
+    - EventType: 0
+      SO: {fileID: 0}
+  choiceNodesSaveData: []

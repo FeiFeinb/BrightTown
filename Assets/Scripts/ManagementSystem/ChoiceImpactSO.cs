@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace ManagementSystem
 {
-    [CreateAssetMenu(fileName = "New ChoiceImpactSO", menuName = "ManagementSystem", order = 0)]
+    [CreateAssetMenu(fileName = "New ChoiceImpactSO", menuName = "ManagementSystem/ChoiceImpact", order = 0)]
     public class ChoiceImpactSO : DialogueEventSO
     {
         public ResourcesPoint playerResource;

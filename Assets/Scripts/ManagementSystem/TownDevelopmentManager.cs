@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using DialogueSystem.GamePlay;
 using DialogueSystem.Graph;
 using ManagementSystem;
 using Module;
@@ -15,6 +16,8 @@ public class TownDevelopmentManager : BaseSingletonWithMono<TownDevelopmentManag
     public List<ChoiceImpactSO> playerChoiceCached = new List<ChoiceImpactSO>();
 
     public int currentTime = 1;
+
+    public bool isCorrupt = false;
     
     public void OnPlayerMakeChoice(ChoiceImpactSO choice)
     {
@@ -25,14 +28,16 @@ public class TownDevelopmentManager : BaseSingletonWithMono<TownDevelopmentManag
         playerChoiceCached.Add(choice);
     }
 
+    public void EndGame()
+    {
+        BaseUI.GetController<EndingController>().CreateEndingResult(playerChoiceCached);
+        BaseUI.GetController<EndingController>().Show();
+        StoryLine.Instance.ResetStoryLine();
+    }
+    
     public void SendQuestionnaire()
     {
         BaseUI.GetController<QuestionnaireController>().CreateQuestionnaireDetail(brightSideScore, currentTime);
-    }
-    
-    void End()
-    {
-        
     }
     
 }

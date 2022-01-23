@@ -2,11 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using DialogueSystem.Graph;
+using DialogueSystem.UI;
+using Module;
+using UICore;
 using UnityEngine;
 
 namespace DialogueSystem.GamePlay
 {
-    public class StoryLine : MonoBehaviour
+    public class StoryLine : BaseSingletonWithMono<StoryLine>
     {
         // TODO 设置对话线
         public List<DialogueGraphSO> storyList;               // 对话内容SO
@@ -20,13 +23,16 @@ namespace DialogueSystem.GamePlay
         
         public void ContinueStoryLine()
         {
-            PlayerDialogueManager.Instance.StartDialogue(storyList[currentIndex++], gameObject);
-        }
+            if (currentIndex >= storyList.Count)
+            {
+                return;
+            }
 
-        public void AdvancementStoryLine()
-        {
-            currentIndex = Mathf.Clamp(currentIndex + 1, 0, storyList.Count - 1);
-            // TODO 对话结束 结束游戏
+            if (BaseUI.GetController<DialogueController>().isActive)
+            {
+                return;
+            }
+            PlayerDialogueManager.Instance.StartDialogue(storyList[currentIndex++], gameObject);
         }
 
         public void ResetStoryLine()

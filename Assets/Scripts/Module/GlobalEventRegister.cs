@@ -40,8 +40,15 @@ namespace Module
             CenterEvent.Instance.AddListener(GlobalEventID.OnStartDialogue,
                 delegate { BaseUI.GetController<DialogueController>().Show(); });
             CenterEvent.Instance.AddListener(GlobalEventID.OnEndDialogue,
-                delegate { BaseUI.GetController<DialogueController>().Hide(); });
-
+                delegate
+                {
+                    BaseUI.GetController<DialogueController>().Hide();
+                    // 问卷调查
+                    TownDevelopmentManager.Instance.SendQuestionnaire();
+                });
+            
+            
+            
             CenterEvent.Instance.AddListener<string>(GlobalEventID.ContinueDialogue,
                 delegate(string param)
                 {

@@ -93,7 +93,7 @@ MonoBehaviour:
       x: 122
       y: 108
       width: 368
-      height: 186
+      height: 200.66666
     _inputPortsData:
     - PortName: Parents
       Capacity: 1
@@ -106,7 +106,7 @@ MonoBehaviour:
       EdgesSaveData:
       - OutputNodeUniqueID: 1f1036d7-85fc-4d21-b1fa-2b07e46b834c
         InputNodeUniqueID: 02a5336f-ca0b-4496-8ee9-d902d3f06f3e
-    Content: "\u9547\u957F\uFF0C\u4E0A\u6B21\u540C\u4F60\u503E\u5C71\u836F\u79CD\u690D\u9879\u76EE\u4F60\u8C02\u5605\u70B9\u554A\uFF1F"
+    Content: "\u9547\u957F\uFF0C\u4E0A\u6B21\u540C\u4F60\u503E\u5C71\u836F\u79CD\u690D\u9879\u76EE\u4F60\u8C02\u5605\u70B9\u554A\uFF1F\n\uFF08\u70B9\u51FB\u7A7A\u683C\u952E\u53EF\u4EE5\u8FDB\u884C\u5BF9\u8BDD\uFF09"
     TalkAudioClip: {fileID: 0}
     Interlocutor: 0
     CharacterInfoSO: {fileID: 11400000, guid: 67b649f956cbea147b0d9cd4e5ea7ae3, type: 2}
@@ -194,8 +194,8 @@ MonoBehaviour:
       serializedVersion: 2
       x: 3166.6667
       y: -188.66667
-      width: 367.33325
-      height: 185.33334
+      width: 368
+      height: 186
     _inputPortsData:
     - PortName: Parents
       Capacity: 1

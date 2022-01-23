@@ -20,16 +20,22 @@ MonoBehaviour:
     InputNodeUniqueID: 6ce12ad0-c07b-4d50-b75a-5c0ed31e30ac
   - OutputNodeUniqueID: 6ce12ad0-c07b-4d50-b75a-5c0ed31e30ac
     InputNodeUniqueID: 6e8c6d10-1a7b-4b99-8062-73da349b7c12
+  - OutputNodeUniqueID: 6e8c6d10-1a7b-4b99-8062-73da349b7c12
+    InputNodeUniqueID: ba757961-9879-41ad-8a6b-426674ad3028
+  - OutputNodeUniqueID: 6e8c6d10-1a7b-4b99-8062-73da349b7c12
+    InputNodeUniqueID: 90559966-e50b-44a7-88ce-f75deef379d4
   - OutputNodeUniqueID: cf8c0a7c-6d9c-45dd-9e45-ed56e10db392
     InputNodeUniqueID: e994eee8-938b-4226-b53c-7b89b0142abd
   - OutputNodeUniqueID: cf8c0a7c-6d9c-45dd-9e45-ed56e10db392
     InputNodeUniqueID: e1da2494-fcb5-4810-98a4-77f72efe2033
   - OutputNodeUniqueID: cf8c0a7c-6d9c-45dd-9e45-ed56e10db392
     InputNodeUniqueID: f5fe1d00-7d0d-40f2-8da1-008ba1e5f8e7
-  - OutputNodeUniqueID: 6e8c6d10-1a7b-4b99-8062-73da349b7c12
-    InputNodeUniqueID: ba757961-9879-41ad-8a6b-426674ad3028
-  - OutputNodeUniqueID: 6e8c6d10-1a7b-4b99-8062-73da349b7c12
-    InputNodeUniqueID: 90559966-e50b-44a7-88ce-f75deef379d4
+  - OutputNodeUniqueID: 597c0ce6-6d06-4747-9e20-0adc53a7182b
+    InputNodeUniqueID: b9633ee2-31a3-4a18-9893-b3763ac2602c
+  - OutputNodeUniqueID: 57534546-724d-4ad2-b315-be10868b0eda
+    InputNodeUniqueID: ebbaecb8-a873-43f0-bab6-15bf503bb70a
+  - OutputNodeUniqueID: b9633ee2-31a3-4a18-9893-b3763ac2602c
+    InputNodeUniqueID: c05b2516-6370-41ad-921e-0e8ad2ff5858
   - OutputNodeUniqueID: ba757961-9879-41ad-8a6b-426674ad3028
     InputNodeUniqueID: cf8c0a7c-6d9c-45dd-9e45-ed56e10db392
   - OutputNodeUniqueID: 90559966-e50b-44a7-88ce-f75deef379d4
@@ -40,12 +46,6 @@ MonoBehaviour:
     InputNodeUniqueID: 597c0ce6-6d06-4747-9e20-0adc53a7182b
   - OutputNodeUniqueID: f5fe1d00-7d0d-40f2-8da1-008ba1e5f8e7
     InputNodeUniqueID: 597c0ce6-6d06-4747-9e20-0adc53a7182b
-  - OutputNodeUniqueID: 597c0ce6-6d06-4747-9e20-0adc53a7182b
-    InputNodeUniqueID: b9633ee2-31a3-4a18-9893-b3763ac2602c
-  - OutputNodeUniqueID: b9633ee2-31a3-4a18-9893-b3763ac2602c
-    InputNodeUniqueID: c05b2516-6370-41ad-921e-0e8ad2ff5858
-  - OutputNodeUniqueID: 57534546-724d-4ad2-b315-be10868b0eda
-    InputNodeUniqueID: ebbaecb8-a873-43f0-bab6-15bf503bb70a
   startNodesSaveData:
   - _uniqueID: 0ece070b-bca4-4b60-a0f0-f75cb41d2c3f
     _rectPos:
@@ -62,33 +62,33 @@ MonoBehaviour:
       - OutputNodeUniqueID: 0ece070b-bca4-4b60-a0f0-f75cb41d2c3f
         InputNodeUniqueID: c1cb41ae-ba25-48da-9402-969265dd5ffd
   endNodesSaveData:
-  - _uniqueID: c05b2516-6370-41ad-921e-0e8ad2ff5858
-    _rectPos:
-      serializedVersion: 2
-      x: 3742.6667
-      y: -123.333336
-      width: 103.33325
-      height: 76.66667
-    _inputPortsData:
-    - PortName: Parents
-      Capacity: 1
-      EdgesSaveData:
-      - OutputNodeUniqueID: b9633ee2-31a3-4a18-9893-b3763ac2602c
-        InputNodeUniqueID: c05b2516-6370-41ad-921e-0e8ad2ff5858
-    _outputPortsData: []
   - _uniqueID: ebbaecb8-a873-43f0-bab6-15bf503bb70a
     _rectPos:
       serializedVersion: 2
-      x: 2454
-      y: 178
+      x: 2708
+      y: 242.66666
       width: 103.33325
-      height: 76.66666
+      height: 77.33334
     _inputPortsData:
     - PortName: Parents
       Capacity: 1
       EdgesSaveData:
       - OutputNodeUniqueID: 57534546-724d-4ad2-b315-be10868b0eda
         InputNodeUniqueID: ebbaecb8-a873-43f0-bab6-15bf503bb70a
+    _outputPortsData: []
+  - _uniqueID: c05b2516-6370-41ad-921e-0e8ad2ff5858
+    _rectPos:
+      serializedVersion: 2
+      x: 3992.6667
+      y: -116
+      width: 103.33325
+      height: 77.333336
+    _inputPortsData:
+    - PortName: Parents
+      Capacity: 1
+      EdgesSaveData:
+      - OutputNodeUniqueID: b9633ee2-31a3-4a18-9893-b3763ac2602c
+        InputNodeUniqueID: c05b2516-6370-41ad-921e-0e8ad2ff5858
     _outputPortsData: []
   talkNodesSaveData:
   - _uniqueID: c1cb41ae-ba25-48da-9402-969265dd5ffd
@@ -143,7 +143,7 @@ MonoBehaviour:
       x: 1338.6666
       y: 94
       width: 356.66675
-      height: 224
+      height: 224.66666
     _inputPortsData:
     - PortName: Parents
       Capacity: 1
@@ -170,7 +170,7 @@ MonoBehaviour:
       serializedVersion: 2
       x: 2184
       y: -164
-      width: 356
+      width: 356.66675
       height: 258
     _inputPortsData:
     - PortName: Parents
@@ -206,7 +206,7 @@ MonoBehaviour:
       serializedVersion: 2
       x: 3091.3333
       y: -123.333336
-      width: 361.3335
+      width: 356.66675
       height: 186
     _inputPortsData:
     - PortName: Parents
@@ -227,7 +227,7 @@ MonoBehaviour:
     Content: "\u55EF\uFF0C\u63A5\u4E0B\u6765\u5C31\u53EF\u4EE5\u50CF\u4E0A\u7EA7\u7533\u8BF7\u62E8\u6B3E\u4E86"
     TalkAudioClip: {fileID: 0}
     Interlocutor: 0
-    CharacterInfoSO: {fileID: 0}
+    CharacterInfoSO: {fileID: 11400000, guid: e00650013a22c034aa4e6e5b8a67322b, type: 2}
   conditionNodesSaveData: []
   eventNodesSaveData:
   - _uniqueID: 57534546-724d-4ad2-b315-be10868b0eda
@@ -235,8 +235,8 @@ MonoBehaviour:
       serializedVersion: 2
       x: 2206
       y: 178
-      width: 184
-      height: 102
+      width: 447.33325
+      height: 158
     _inputPortsData:
     - PortName: Parents
       Capacity: 0
@@ -249,14 +249,16 @@ MonoBehaviour:
       EdgesSaveData:
       - OutputNodeUniqueID: 57534546-724d-4ad2-b315-be10868b0eda
         InputNodeUniqueID: ebbaecb8-a873-43f0-bab6-15bf503bb70a
-    EventFieldsData: []
+    EventFieldsData:
+    - EventType: 0
+      SO: {fileID: 11400000, guid: 82f4280822d1d7a4fbe0de46703b242f, type: 2}
   - _uniqueID: b9633ee2-31a3-4a18-9893-b3763ac2602c
     _rectPos:
       serializedVersion: 2
       x: 3512.6667
       y: -123.333336
-      width: 184
-      height: 102
+      width: 428
+      height: 158
     _inputPortsData:
     - PortName: Parents
       Capacity: 0
@@ -269,14 +271,16 @@ MonoBehaviour:
       EdgesSaveData:
       - OutputNodeUniqueID: b9633ee2-31a3-4a18-9893-b3763ac2602c
         InputNodeUniqueID: c05b2516-6370-41ad-921e-0e8ad2ff5858
-    EventFieldsData: []
+    EventFieldsData:
+    - EventType: 0
+      SO: {fileID: 11400000, guid: c06f1757569a8054795078a797d9623a, type: 2}
   choiceNodesSaveData:
   - _uniqueID: ba757961-9879-41ad-8a6b-426674ad3028
     _rectPos:
       serializedVersion: 2
       x: 1802.6666
       y: -26
-      width: 273.33337
+      width: 272.66663
       height: 142
     _inputPortsData:
     - PortName: Input
@@ -318,8 +322,8 @@ MonoBehaviour:
       serializedVersion: 2
       x: 2685.3333
       y: -300.66666
-      width: 272.66675
-      height: 141.33331
+      width: 273.3335
+      height: 142
     _inputPortsData:
     - PortName: Input
       Capacity: 1
@@ -339,8 +343,8 @@ MonoBehaviour:
       serializedVersion: 2
       x: 2685.3333
       y: -123.333336
-      width: 272.66675
-      height: 141.33334
+      width: 273.3335
+      height: 142
     _inputPortsData:
     - PortName: Input
       Capacity: 1
@@ -360,8 +364,8 @@ MonoBehaviour:
       serializedVersion: 2
       x: 2686
       y: 52
-      width: 272.66675
-      height: 141.33333
+      width: 273.33325
+      height: 142
     _inputPortsData:
     - PortName: Input
       Capacity: 1
